@@ -355,7 +355,6 @@ GameObject:
   m_Component:
   - component: {fileID: 590881437}
   - component: {fileID: 590881441}
-  - component: {fileID: 590881439}
   - component: {fileID: 590881438}
   - component: {fileID: 590881436}
   - component: {fileID: 590881435}
@@ -468,19 +467,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 10
   playerHealth: {fileID: 643312477}
---- !u!114 &590881439
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 590881434}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6376c789cecdc2b42b29ed43504d3c35, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 3
 --- !u!212 &590881440
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -542,10 +528,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 590881434}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6376c789cecdc2b42b29ed43504d3c35, type: 3}
+  m_Script: {fileID: 11500000, guid: be5d7a3aa545d1d48ab7bc68b0b01f71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 3
+  speed: 3
 --- !u!1 &643312471
 GameObject:
   m_ObjectHideFlags: 0
