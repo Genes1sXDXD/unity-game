@@ -466,7 +466,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 10
-  playerHealth: {fileID: 643312477}
+  playerHealth: {fileID: 0}
 --- !u!212 &590881440
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -542,7 +542,7 @@ GameObject:
   m_Component:
   - component: {fileID: 643312475}
   - component: {fileID: 643312474}
-  - component: {fileID: 643312477}
+  - component: {fileID: 643312479}
   - component: {fileID: 643312472}
   - component: {fileID: 643312476}
   - component: {fileID: 643312478}
@@ -653,20 +653,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &643312477
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 643312471}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 627c517d70e0aba439c5b24c7d274b3b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 100
-  health: 0
 --- !u!212 &643312478
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -719,6 +705,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &643312479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 643312471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627c517d70e0aba439c5b24c7d274b3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  health: 0
 --- !u!1 &727744290
 GameObject:
   m_ObjectHideFlags: 0
