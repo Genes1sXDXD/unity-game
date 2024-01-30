@@ -47,6 +47,9 @@ public class MaterialSpawner : MonoBehaviour
             }
 
             Instantiate(materialPrefab, worldSpawnPosition, Quaternion.identity);
+          
+            materialPrefab.transform.position = new Vector3(worldSpawnPosition.x, worldSpawnPosition.y, 0f);
+
         }
     }
 }
