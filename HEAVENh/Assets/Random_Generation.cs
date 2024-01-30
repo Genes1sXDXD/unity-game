@@ -25,7 +25,7 @@ public class MaterialSpawner : MonoBehaviour
             Vector3 worldSpawnPosition = Camera.main.ScreenToWorldPoint(spawnPosition);
 
             // Choose a random material type
-            int materialType = Random.Range(0, 3);
+            int materialType = Random.Range(0, 6);
 
             GameObject materialPrefab;
 
@@ -40,6 +40,15 @@ public class MaterialSpawner : MonoBehaviour
                     break;
                 case 2:
                     materialPrefab = ironPrefab;
+                    break;
+                case 3:
+                    materialPrefab = woodPrefab;
+                    break;
+                case 4:
+                    materialPrefab = woodPrefab;
+                    break;
+                    case 5:
+                        materialPrefab = stonePrefab;
                     break;
                 default:
                     materialPrefab = woodPrefab;  // Default to wood if something goes wrong
