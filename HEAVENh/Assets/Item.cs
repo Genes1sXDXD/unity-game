@@ -7,6 +7,7 @@ public class Item : MonoBehaviour
 {
     public int id;
     public string nameItem;
+    public GameObject prefab;
     // Add more properties as needed
 }
 

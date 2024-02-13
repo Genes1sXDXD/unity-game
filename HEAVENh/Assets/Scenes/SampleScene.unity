@@ -525,6 +525,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 92279114}
   m_CullTransparentMesh: 1
+--- !u!1 &105919887 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6562179655875438807, guid: 4906317b1b083c5429b903b74047e8ba, type: 3}
+  m_PrefabInstance: {fileID: 5979538045705149253}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &105919888 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2006675126016944611, guid: 4906317b1b083c5429b903b74047e8ba, type: 3}
+  m_PrefabInstance: {fileID: 5979538045705149253}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 105919887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f12661f0f5f6384495e3f2b7836c2c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &132149548 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6662873559417464970, guid: e43ec1352a36d604b9a3a1e7a5e52c68, type: 3}
@@ -556,6 +572,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mineralType: Iron
   maxHealth: 200
+--- !u!114 &132149557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 132149548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e14e3dd2c94625c43a3fbf02886b6171, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemToDrop: {fileID: 105919888}
 --- !u!1 &173512239
 GameObject:
   m_ObjectHideFlags: 0
@@ -892,6 +921,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 219932966}
   m_CullTransparentMesh: 1
+--- !u!1 &222363350 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7450088482532956899, guid: 46fda1be7c850334f825ce758802108c, type: 3}
+  m_PrefabInstance: {fileID: 3197982772086317626}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &222363351 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3193906294347263658, guid: 46fda1be7c850334f825ce758802108c, type: 3}
+  m_PrefabInstance: {fileID: 3197982772086317626}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 222363350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f12661f0f5f6384495e3f2b7836c2c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &227080612
 GameObject:
   m_ObjectHideFlags: 0
@@ -3509,6 +3554,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mineralType: Stone
   maxHealth: 150
+--- !u!114 &1125818195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1125818186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e14e3dd2c94625c43a3fbf02886b6171, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemToDrop: {fileID: 222363351}
 --- !u!1 &1162287948
 GameObject:
   m_ObjectHideFlags: 0
@@ -3718,6 +3776,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1174479151}
   m_CullTransparentMesh: 1
+--- !u!1 &1292313939 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9165293162153704171, guid: 50636864cabae5f47a42e0da8c7806a5, type: 3}
+  m_PrefabInstance: {fileID: 4087940190145852708}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1292313940 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4412472285467980835, guid: 50636864cabae5f47a42e0da8c7806a5, type: 3}
+  m_PrefabInstance: {fileID: 4087940190145852708}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292313939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f12661f0f5f6384495e3f2b7836c2c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1294807843
 GameObject:
   m_ObjectHideFlags: 0
@@ -13761,6 +13835,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mineralType: Wood
   maxHealth: 100
+--- !u!114 &1849453670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1849453661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e14e3dd2c94625c43a3fbf02886b6171, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemToDrop: {fileID: 1292313940}
 --- !u!1 &1851801654
 GameObject:
   m_ObjectHideFlags: 0
@@ -14550,6 +14637,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6662873559417464970, guid: e43ec1352a36d604b9a3a1e7a5e52c68, type: 3}
       insertIndex: -1
       addedObject: {fileID: 132149556}
+    - targetCorrespondingSourceObject: {fileID: 6662873559417464970, guid: e43ec1352a36d604b9a3a1e7a5e52c68, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 132149557}
   m_SourcePrefab: {fileID: 100100000, guid: e43ec1352a36d604b9a3a1e7a5e52c68, type: 3}
 --- !u!1001 &3197982772086317626
 PrefabInstance:
@@ -14599,6 +14689,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3193906294347263658, guid: 46fda1be7c850334f825ce758802108c, type: 3}
+      propertyPath: prefab
+      value: 
+      objectReference: {fileID: 222363350}
     - target: {fileID: 7450088482532956899, guid: 46fda1be7c850334f825ce758802108c, type: 3}
       propertyPath: m_Name
       value: stone
@@ -14616,6 +14710,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4412472285467980835, guid: 50636864cabae5f47a42e0da8c7806a5, type: 3}
+      propertyPath: prefab
+      value: 
+      objectReference: {fileID: 1292313939}
     - target: {fileID: 6492702860626705960, guid: 50636864cabae5f47a42e0da8c7806a5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.26
@@ -14767,6 +14865,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1986925656844423488, guid: 553b085155d25de46909fef6aa1c350e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1849453669}
+    - targetCorrespondingSourceObject: {fileID: 1986925656844423488, guid: 553b085155d25de46909fef6aa1c350e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1849453670}
   m_SourcePrefab: {fileID: 100100000, guid: 553b085155d25de46909fef6aa1c350e, type: 3}
 --- !u!1001 &5979538045705149253
 PrefabInstance:
@@ -14816,6 +14917,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2006675126016944611, guid: 4906317b1b083c5429b903b74047e8ba, type: 3}
+      propertyPath: prefab
+      value: 
+      objectReference: {fileID: 105919887}
     - target: {fileID: 6562179655875438807, guid: 4906317b1b083c5429b903b74047e8ba, type: 3}
       propertyPath: m_Name
       value: Iron
@@ -14935,6 +15040,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4573497390800882439, guid: 9c4db54b50754604bb719ba0e47e2448, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1125818194}
+    - targetCorrespondingSourceObject: {fileID: 4573497390800882439, guid: 9c4db54b50754604bb719ba0e47e2448, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1125818195}
   m_SourcePrefab: {fileID: 100100000, guid: 9c4db54b50754604bb719ba0e47e2448, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
