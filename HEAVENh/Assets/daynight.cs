@@ -31,6 +31,9 @@ public class DayNightCycleManager : MonoBehaviour
             // Adjust ambient light intensity
             RenderSettings.ambientIntensity = isDaytime ? dayAmbientIntensity : nightAmbientIntensity;
 
+            // Force re-rendering to apply the changes immediately
+            RenderSettings.ambientMode = UnityEngine.Rendering.AmbientMode.Flat;
+
             // Wait for the next day or night cycle
             yield return dayWait;
         }

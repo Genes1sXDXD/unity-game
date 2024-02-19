@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 3af51ffef71e5b245af3328b3b1bcb5d, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -2882,7 +2882,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fe40f3cf2ccdc54a8de28cb880f6206, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dayDuration: 360
+  dayDuration: 10
   enemySpawner: {fileID: 752233850}
   nightAmbientIntensity: 0.1
   dayAmbientIntensity: 1
