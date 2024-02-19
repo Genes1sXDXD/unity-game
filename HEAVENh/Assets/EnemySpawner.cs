@@ -10,6 +10,7 @@ public class EnemySpawner : MonoBehaviour
     private Camera mainCamera;
     private float minX, maxX, minY, maxY;
     private float timer;
+    private bool isSpawningEnabled = true; // Toggle spawning behavior
 
     void Start()
     {
@@ -21,7 +22,7 @@ public class EnemySpawner : MonoBehaviour
     void Update()
     {
         timer -= Time.deltaTime;
-        if (timer <= 0)
+        if (timer <= 0 && isSpawningEnabled)
         {
             SpawnEnemy();
             timer = spawnInterval; // Reset the timer
@@ -50,7 +51,6 @@ public class EnemySpawner : MonoBehaviour
         return spawnPosition;
     }
 
-
     void CalculateBounds()
     {
         if (mainCamera == null)
@@ -64,5 +64,11 @@ public class EnemySpawner : MonoBehaviour
         maxX = topRight.x;
         minY = bottomLeft.y;
         maxY = topRight.y;
+    }
+
+    // Toggle spawning behavior (called externally, e.g., from a day-night cycle manager)
+    public void ToggleSpawning(bool enableSpawning)
+    {
+        isSpawningEnabled = enableSpawning;
     }
 }
