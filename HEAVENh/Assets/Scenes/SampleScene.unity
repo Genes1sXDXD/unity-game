@@ -677,8 +677,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 378, y: 262}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 292.65, y: 176.67}
+  m_SizeDelta: {x: 106.7, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &752233849
 GameObject:
@@ -709,7 +709,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d6ad86a51f022c40874da15b760712a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 2720653753004119442, guid: afa5046ca3801a643a873cae0ee02ba5, type: 3}
+  enemyPrefab: {fileID: 0}
   spawnRadius: 20
   spawnInterval: 5
 --- !u!4 &752233851
@@ -1099,8 +1099,8 @@ Canvas:
   m_GameObject: {fileID: 1162287948}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 519420031}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -1110,7 +1110,7 @@ Canvas:
   m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: 1238305125
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!224 &1162287953
