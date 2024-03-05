@@ -530,10 +530,9 @@ GameObject:
   - component: {fileID: 643312476}
   - component: {fileID: 643312478}
   - component: {fileID: 643312480}
-  - component: {fileID: 643312482}
-  - component: {fileID: 643312481}
   - component: {fileID: 643312483}
   - component: {fileID: 643312484}
+  - component: {fileID: 643312485}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -723,34 +722,6 @@ MonoBehaviour:
   mineralLayer:
     serializedVersion: 2
     m_Bits: 1
---- !u!114 &643312481
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 643312471}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47913e82312a9d142afe10551974e2a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inventory: {fileID: 643312482}
-  inventoryKey: 105
---- !u!114 &643312482
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 643312471}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b75466a96cee974ea2cec4e1899d96f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  items: []
-  inventorySize: 20
 --- !u!114 &643312483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -777,6 +748,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventoryPanel: {fileID: 942102687}
+--- !u!114 &643312485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 643312471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01ee068580047d84f8e40174329aa362, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &644156323
 GameObject:
   m_ObjectHideFlags: 0
@@ -1041,7 +1024,7 @@ GameObject:
   - component: {fileID: 1073874017}
   - component: {fileID: 1073874016}
   m_Layer: 0
-  m_Name: Canvas
+  m_Name: InventoryCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
