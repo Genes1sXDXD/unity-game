@@ -370,7 +370,7 @@ GameObject:
   - component: {fileID: 173512241}
   - component: {fileID: 173512240}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: TreeStoneIronSpwaner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -392,6 +392,9 @@ MonoBehaviour:
   stonePrefab: {fileID: 1125818186}
   ironPrefab: {fileID: 132149548}
   numberOfMaterialsToSpawn: 15
+  OnMaterialSpawned:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &173512241
 Transform:
   m_ObjectHideFlags: 0
@@ -868,7 +871,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d6ad86a51f022c40874da15b760712a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 0}
+  enemyPrefab: {fileID: 2720653753004119442, guid: afa5046ca3801a643a873cae0ee02ba5, type: 3}
   spawnRadius: 20
   spawnInterval: 5
 --- !u!4 &752233851
@@ -881,6 +884,37 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.1469445, y: 2.089704, z: -0.028200088}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &887174614
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 887174615}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &887174615
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 887174614}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.2732257, y: 1.5944697, z: -0.20741874}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -991,7 +1025,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fe40f3cf2ccdc54a8de28cb880f6206, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dayDuration: 10
+  dayDuration: 360
   enemySpawner: {fileID: 752233850}
   nightAmbientIntensity: 0.1
   dayAmbientIntensity: 1
@@ -11377,6 +11411,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone
       objectReference: {fileID: 0}
+    - target: {fileID: 7450088482532956899, guid: 46fda1be7c850334f825ce758802108c, type: 3}
+      propertyPath: m_TagString
+      value: PickUpItem
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11437,6 +11475,10 @@ PrefabInstance:
     - target: {fileID: 9165293162153704171, guid: 50636864cabae5f47a42e0da8c7806a5, type: 3}
       propertyPath: m_Name
       value: wood
+      objectReference: {fileID: 0}
+    - target: {fileID: 9165293162153704171, guid: 50636864cabae5f47a42e0da8c7806a5, type: 3}
+      propertyPath: m_TagString
+      value: PickUpItem
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11609,6 +11651,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Iron
       objectReference: {fileID: 0}
+    - target: {fileID: 6562179655875438807, guid: 4906317b1b083c5429b903b74047e8ba, type: 3}
+      propertyPath: m_TagString
+      value: PickUpItem
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11755,3 +11801,4 @@ SceneRoots:
   - {fileID: 1073874020}
   - {fileID: 1644036843}
   - {fileID: 172289141}
+  - {fileID: 887174615}
