@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class MaterialSpawner : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class MaterialSpawner : MonoBehaviour
     public GameObject ironPrefab;
 
     public int numberOfMaterialsToSpawn = 10;  // Adjust the number as needed
+
+    public UnityEvent OnMaterialSpawned;
 
     void Start()
     {
@@ -66,6 +69,11 @@ public class MaterialSpawner : MonoBehaviour
                 default:
                     materialPrefab = woodPrefab;  // Default to wood if something goes wrong
                     break;
+            }
+            // Invoke the event when materials are spawned
+            if (OnMaterialSpawned != null)
+            {
+                OnMaterialSpawned.Invoke();
             }
 
             Instantiate(materialPrefab, worldSpawnPosition, Quaternion.identity);
