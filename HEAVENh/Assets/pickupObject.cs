@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class pickupObject : MonoBehaviour
 {
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +15,18 @@ public class pickupObject : MonoBehaviour
     void Update()
     {
         
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("PickUpItem"))
+        {
+            Inventory inventory = other.GetComponent<Inventory>();
+
+            if (inventory != null)
+            {
+
+            }
+        }
     }
 }
