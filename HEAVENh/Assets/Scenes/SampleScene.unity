@@ -1033,6 +1033,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dayDuration: 360
   enemySpawner: {fileID: 752233850}
+  materialSpawner: {fileID: 173512240}
   nightAmbientIntensity: 0.1
   dayAmbientIntensity: 1
 --- !u!4 &1048324593

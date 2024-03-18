@@ -8,6 +8,7 @@ public class Timer : MonoBehaviour
     public Text timerText;
     private float initialTimerValue = 360.0f; // 6 minutes in seconds
     private float timerValue;
+    
 
     void Start()
     {
@@ -24,6 +25,7 @@ public class Timer : MonoBehaviour
         else
         {
             // Timer has reached 0, reset the timer
+        
             ResetTimer();
         }
     }
@@ -35,6 +37,7 @@ public class Timer : MonoBehaviour
 
         timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
+   
 
     void ResetTimer()
     {
