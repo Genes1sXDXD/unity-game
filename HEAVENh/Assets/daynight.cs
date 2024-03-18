@@ -2,10 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
 public class DayNightCycleManager : MonoBehaviour
 {
     public float dayDuration = 60f; // Duration of a day in seconds
     public EnemySpawner enemySpawner; // Reference to the EnemySpawner script
+    public MaterialSpawner materialSpawner; // Reference to the MaterialSpawner script
     public float nightAmbientIntensity = 0.1f; // Intensity of ambient light during the night
     public float dayAmbientIntensity = 1f; // Intensity of ambient light during the day
 
@@ -25,17 +28,24 @@ public class DayNightCycleManager : MonoBehaviour
             // Toggle daytime and nighttime
             isDaytime = !isDaytime;
 
-            // Toggle enemy spawning based on the time of day
-            enemySpawner.ToggleSpawning(isDaytime);
-
             // Adjust ambient light intensity
             RenderSettings.ambientIntensity = isDaytime ? dayAmbientIntensity : nightAmbientIntensity;
 
             // Force re-rendering to apply the changes immediately
             RenderSettings.ambientMode = UnityEngine.Rendering.AmbientMode.Flat;
 
+            // Toggle enemy spawning based on the time of day
+            enemySpawner.ToggleSpawning(isDaytime);
+
+            // Trigger material spawning when enemies start to spawn
+            if (isDaytime)
+            {
+                materialSpawner.SpawnMaterials();
+            }
+
             // Wait for the next day or night cycle
             yield return dayWait;
         }
     }
 }
+

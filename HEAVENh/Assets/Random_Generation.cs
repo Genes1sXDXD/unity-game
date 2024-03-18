@@ -18,7 +18,7 @@ public class MaterialSpawner : MonoBehaviour
         SpawnMaterials();
     }
 
-    void SpawnMaterials()
+    public void SpawnMaterials()
     {
         for (int i = 0; i < numberOfMaterialsToSpawn; i++)
         {
